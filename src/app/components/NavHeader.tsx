@@ -8,17 +8,17 @@ export function NavHeader() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-18">
 
-                    <div className="flex items-center">
+                    <div className="flex items-center justify-start">
                         <Link href="/">
-                            <Image src="/logo.png" alt="Logo" width={200} height={130} />
+                            <Image src="/logo.png" alt="Logo" width={250} height={150} />
                         </Link>
                     </div>
 
                     <div className="flex items-center">
                         <nav className="space-x-6">
-                            <a href="#" className="text-[#008000] hover:text-green-900 text-[17px]">選挙とは</a>
-                            <a href="#" className="text-[#008000] hover:text-green-900 text-[17px]">候補者一覧</a>
-                            <a href="#" className="text-[#008000] hover:text-green-900 text-[17px]">会則・注意事項</a>
+                            <a href="#" className="text-[#008000] hover:text-green-900 text-[20px]">選挙とは？</a>
+                            <a href="#" className="text-[#008000] hover:text-green-900 text-[20px]">候補者一覧</a>
+                            <a href="#" className="text-[#008000] hover:text-green-900 text-[20px]">会則・注意事項</a>
                         </nav>
                     </div>
 
