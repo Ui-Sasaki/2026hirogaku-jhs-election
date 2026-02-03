@@ -23,7 +23,7 @@ export default function Home() {
             <h1>詳しくはこちら</h1>
             <Image src="/home/arrow.png" alt="Arrow" width={20} height={20} className="ml-2" />
           </div>
-          <h1 className="absolute text-[18px] text- bottom-15 left-10 text-white flex">◯月◯日選挙運動開始／◯月◯日投開票</h1>
+          <h1 className="absolute text-[18px] text- bottom-15 left-10 text-white flex">2月7日選挙運動開始／2月16日投開票</h1>
         </div>
       </div>
 
