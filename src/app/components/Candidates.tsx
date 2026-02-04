@@ -79,7 +79,7 @@ function TrustVoteBadge({ onClick }: { onClick: () => void }) {
 function CandidateCard({ candidate }: { candidate: Candidate }) {
   return (
     <Link href={`/candidates/${candidate.id}`} className="block">
-      <div className="group flex w-[400px] h-[280px] bg-white rounded-md shadow-md overflow-hidden hover:scale-[1.02] transition cursor-pointer">
+      <div className="group flex w-[400px] h-[310px] bg-white rounded-md shadow-md overflow-hidden hover:scale-[1.02] transition cursor-pointer">
         <div className="relative w-[55%] h-full">
           <Image
             src={candidate.image}
