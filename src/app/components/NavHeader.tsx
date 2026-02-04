@@ -15,27 +15,9 @@ export function NavHeader() {
 
                     <div className="flex items-center">
                         <nav className="space-x-6">
-<<<<<<< HEAD
-                            {/* Updated: Changed href="#" to href="/election-info" */}
-                            <Link href="/election-info" className="text-[#008000] hover:text-green-900 text-[20px]">
-                                選挙とは？
-                            </Link>
-                            <Link href="#" className="text-[#008000] hover:text-green-900 text-[20px]">
-                                候補者一覧
-                            </Link>
-                            <a 
-                              href="https://drive.google.com/file/d/1UTIbJA8vp0z4_pXENxEnEYMmFaOkS9Ng/view?usp=sharing" 
-                              className="text-[#008000] hover:text-green-900 text-[20px]"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                                会則・注意事項
-                            </a>
-=======
                             <a href="#" className="text-[#008000] hover:text-green-900 text-[20px]">選挙とは？</a>
                             <a href="/candidates" className="text-[#008000] hover:text-green-900 text-[20px]">候補者一覧</a>
                             <a href="#" className="text-[#008000] hover:text-green-900 text-[20px]">会則・注意事項</a>
->>>>>>> 189bc71 (コピペしまくり仕事)
                         </nav>
                     </div>
 
