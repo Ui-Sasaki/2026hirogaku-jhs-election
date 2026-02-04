@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { candidates } from "../data/candidates";
 
@@ -43,7 +44,6 @@ function PageTitle() {
         <div className="w-1 h-full bg-white" />
         <div className="w-1 h-full bg-white ml-1" />
       </div>
-
       <h1 className="ml-5 text-white font-bold text-2xl whitespace-nowrap">
         候補者一覧
       </h1>
@@ -58,7 +58,6 @@ function SectionTitle({ title }: { title: string }) {
         <div className="w-1 h-full bg-green-700" />
         <div className="w-1 h-full bg-green-700 ml-1" />
       </div>
-
       <h2 className="ml-5 text-green-700 font-bold text-2xl whitespace-nowrap">
         {formatTitle(title)}
       </h2>
@@ -79,26 +78,28 @@ function TrustVoteBadge({ onClick }: { onClick: () => void }) {
 
 function CandidateCard({ candidate }: { candidate: Candidate }) {
   return (
-    <div className="group flex w-[400px] h-[280px] bg-white rounded-md shadow-md overflow-hidden hover:scale-[1.02] transition cursor-pointer">
-      <div className="relative w-[55%] h-full">
-        <Image
-          src={candidate.image}
-          alt={candidate.name}
-          fill
-          className="object-cover"
-        />
-      </div>
+    <Link href={`/candidates/${candidate.id}`} className="block">
+      <div className="group flex w-[400px] h-[280px] bg-white rounded-md shadow-md overflow-hidden hover:scale-[1.02] transition cursor-pointer">
+        <div className="relative w-[55%] h-full">
+          <Image
+            src={candidate.image}
+            alt={candidate.name}
+            fill
+            className="object-cover"
+          />
+        </div>
 
-      <div className="w-[45%] h-full bg-green-700 flex flex-col items-center justify-center gap-4">
-        <p className="text-white text-xl font-bold text-center">
-          {candidate.name}
-        </p>
+        <div className="w-[45%] h-full bg-green-700 flex flex-col items-center justify-center gap-4">
+          <p className="text-white text-xl font-bold text-center">
+            {candidate.name}
+          </p>
 
-        <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
-          <span className="text-green-700 text-2xl font-bold">→</span>
+          <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+            <span className="text-green-700 text-2xl font-bold">→</span>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
@@ -157,7 +158,7 @@ export default function Candidates() {
               {positionCounts[position]}
             </span>
 
-            {(position === "会長" || position === "会計中3") && (
+            {(position === "会長" || position === "書記中3") && (
               <TrustVoteBadge onClick={() => setShowModal(true)} />
             )}
           </div>
@@ -172,4 +173,3 @@ export default function Candidates() {
     </div>
   );
 }
-
