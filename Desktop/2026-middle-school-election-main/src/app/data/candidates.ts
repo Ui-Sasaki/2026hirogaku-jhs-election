@@ -1,0 +1,80 @@
+export const candidates = [
+  {
+    id: "takaichi",
+    name: "亀甲愛奈",
+    position: "会長",
+    image: "/candidates/Takaichi.png",
+  },
+  {
+    id: "yumoto",
+    name: "湯本篤輝",
+    position: "副会長",
+    image: "/candidates/Koizumi.png",
+  },
+  {
+    id: "sugioka",
+    name: "杉岡歩佳",
+    position: "副会長",
+    image: "/candidates/Koizumi.png",
+  },
+  {
+    id: "kosuge",
+    name: "小菅まり彩",
+    position: "副会長",
+    image: "/candidates/Koizumi.png",
+  },
+  {
+    id: "hoda",
+    name: "保田朝陽",
+    position: "書記中3",
+    image: "/candidates/Syu-san.png",
+  },
+  {
+    id: "takahashi",
+    name: "高橋祐希",
+    position: "書記中3",
+    image: "/candidates/Syu-san.png",
+  },
+  {
+    id: "katumi",
+    name: "勝見文香",
+    position: "書記中2",
+    image: "/candidates/Syu-san.png",
+  },
+  {
+    id: "kimura",
+    name: "木村日葵",
+    position: "書記中2",
+    image: "/candidates/Syu-san.png",
+  },
+  {
+    id: "ozaki",
+    name: "柳澤萌杏",
+    position: "書記中2",
+    image: "/candidates/Syu-san.png",
+  },
+  {
+    id: "kose",
+    name: "古瀬遥",
+    position: "会計中3",
+    image: "/candidates/Kurodenwa.png",
+  },
+  {
+    id: "takaesu",
+    name: "高江洲郁斗",
+    position: "会計中2",
+    image: "/candidates/Kurodenwa.png",
+  },
+  {
+    id: "fukutome",
+    name: "福留未久",
+    position: "会計中2",
+    image: "/candidates/Kurodenwa.png",
+  },
+  {
+    id: "bou",
+    name: "房熙然",
+    position: "会計中2",
+    image: "/candidates/Kurodenwa.png",
+  },
+];
