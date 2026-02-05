@@ -15,7 +15,7 @@ export function NavHeader() {
 
                     <div className="flex items-center">
                         <nav className="space-x-6">
-                            <a href="#" className="text-[#008000] hover:text-green-900 text-[20px]">選挙とは？</a>
+                            <a href="/election-info" className="text-[#008000] hover:text-green-900 text-[20px]">選挙とは？</a>
                             <a href="/candidates" className="text-[#008000] hover:text-green-900 text-[20px]">候補者一覧</a>
                             <a href="#" className="text-[#008000] hover:text-green-900 text-[20px]">会則・注意事項</a>
                         </nav>

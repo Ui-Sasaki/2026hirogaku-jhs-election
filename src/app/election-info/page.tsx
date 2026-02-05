@@ -63,12 +63,185 @@ export default function ElectionInfoPage() {
         </div>
       </div>
 
-      {/* White box with text - centered below header2.png */}
+      {/* White box with text */}
       <div className="flex justify-center pb-16">
-        <div className="bg-white border border-gray-200 shadow-sm p-8 w-full max-w-4xl text-center"> {/* Changed p-6 to p-8, max-w-3xl to max-w-4xl */}
-          <p className="text-2xl text-black"> {/* Changed text-lg to text-xl */}
+        <div className="bg-white border border-gray-200 shadow-sm p-8 w-full max-w-4xl text-center">
+          <p className="text-2xl text-black"> 
             現職中学生徒会役員による役職紹介を掲載しています。
           </p>
+        </div>
+      </div>
+
+      {/* 4 Pairs in 2x2 Grid Layout */}
+      <div className="max-w-6xl mx-auto px-4 pb-20">
+        {/* First Row: 2 pairs */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          {/* Pair 1 - 生徒会長 */}
+          <div className="flex items-center gap-6">
+            {/* Left: Image */}
+            <div className="w-1/2">
+              <div className="relative w-full aspect-[883/652]">
+                <Image
+                  src="/election-info/chair.webp"
+                  alt="生徒会長"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            
+            {/* Right: Green box with title and caret - not curved */}
+            <div className="w-1/2 flex justify-center">
+              <div className="w-40 h-52 bg-[#008000] flex flex-col items-center justify-center p-4"> {/* Removed rounded-lg */}
+                {/* Title */}
+                <div className="text-white text-xl font-bold mb-4 text-center">
+                  生徒会長
+                </div>
+                
+                {/* Caret inside white circle */}
+                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-12 w-12 text-[#008000]"
+                    viewBox="0 0 20 20" 
+                    fill="currentColor"
+                  >
+                    <path 
+                      fillRule="evenodd" 
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" 
+                      clipRule="evenodd" 
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Pair 2 - 副会長 */}
+          <div className="flex items-center gap-6">
+            {/* Left: Image */}
+            <div className="w-1/2">
+              <div className="relative w-full aspect-[883/652]">
+                <Image
+                  src="/election-info/chair.webp"
+                  alt="副会長"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            
+            {/* Right: Green box with title and caret - not curved */}
+            <div className="w-1/2 flex justify-center">
+              <div className="w-40 h-52 bg-[#008000] flex flex-col items-center justify-center p-4"> {/* Removed rounded-lg */}
+                {/* Title */}
+                <div className="text-white text-xl font-bold mb-4 text-center">
+                  副会長
+                </div>
+                
+                {/* Caret inside white circle */}
+                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-12 w-12 text-[#008000]"  
+                    viewBox="0 0 20 20" 
+                    fill="currentColor"
+                  >
+                    <path 
+                      fillRule="evenodd" 
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" 
+                      clipRule="evenodd" 
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Second Row: 2 pairs */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Pair 3 - 書記 */}
+          <div className="flex items-center gap-6">
+            {/* Left: Image */}
+            <div className="w-1/2">
+              <div className="relative w-full aspect-[883/652]">
+                <Image
+                  src="/election-info/secretary.webp"
+                  alt="書記"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            
+            {/* Right: Green box with title and caret - not curved */}
+            <div className="w-1/2 flex justify-center">
+              <div className="w-40 h-52 bg-[#008000] flex flex-col items-center justify-center p-4"> {/* Removed rounded-lg */}
+                {/* Title */}
+                <div className="text-white text-xl font-bold mb-4 text-center">
+                  書記
+                </div>
+                
+                {/* Caret inside white circle */}
+                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-12 w-12 text-[#008000]"  
+                    viewBox="0 0 20 20" 
+                    fill="currentColor"
+                  >
+                    <path 
+                      fillRule="evenodd" 
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" 
+                      clipRule="evenodd" 
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Pair 4 - 会計 */}
+          <div className="flex items-center gap-6">
+            {/* Left: Image */}
+            <div className="w-1/2">
+              <div className="relative w-full aspect-[883/652]">
+                <Image
+                  src="/election-info/treasurer.webp"
+                  alt="会計"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            
+            {/* Right: Green box with title and caret - not curved */}
+            <div className="w-1/2 flex justify-center">
+              <div className="w-40 h-52 bg-[#008000] flex flex-col items-center justify-center p-4"> {/* Removed rounded-lg */}
+                {/* Title */}
+                <div className="text-white text-xl font-bold mb-4 text-center">
+                  会計
+                </div>
+                
+                {/* Caret inside white circle */}
+                <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    className="h-12 w-12 text-[#008000]" 
+                    viewBox="0 0 20 20" 
+                    fill="currentColor"
+                  >
+                    <path 
+                      fillRule="evenodd" 
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" 
+                      clipRule="evenodd" 
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
