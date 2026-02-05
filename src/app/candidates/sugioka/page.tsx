@@ -63,9 +63,9 @@ export default function SugiokaProfile() {
 
           <div className="mt-16">
             <h3 className="text-2xl font-bold mb-4">政見放送</h3>
-            <div className="border rounded-lg h-[360px] flex items-center justify-center text-gray-500">
-              未提出のため掲載なし
-            </div>
+            <div class="border rounded-lg w-[800px] mx-auto flex items-center justify-center">
+                <video src="/video/sugioka.mp4" controls class="w-full"></video>
+              </div>
           </div>
 
         </div>
