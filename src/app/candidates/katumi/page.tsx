@@ -63,7 +63,7 @@ export default function HodaProfile() {
 
           <div className="mt-16">
             <div class="border rounded-lg w-[800px] mx-auto flex items-center justify-center">
-                <video src="/video/katumi.mov" controls class="w-full"></video>
+                <video src="/video/katumi.mp4" controls class="w-full"></video>
               </div>
             </div>
           </div>
