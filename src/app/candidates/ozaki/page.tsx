@@ -66,7 +66,7 @@ export default function HodaProfile() {
           <div className="mt-16">
             <h3 className="text-2xl font-bold mb-4">政見放送</h3>
             <div className="border rounded-lg h-[360px] flex items-center justify-center text-gray-500">
-              未提出のため掲載なし
+              <video src="/video/ozaki.mp4" controls width="200" />
             </div>
           </div>
 
