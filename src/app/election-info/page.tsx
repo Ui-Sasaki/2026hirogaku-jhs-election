@@ -23,7 +23,7 @@ export default function ElectionInfoPage() {
       <main className="pt-4 pb-16 px-4 max-w-6xl mx-auto">
         {/* Image 1 */}
         <Image 
-          src="/election-info/method1.webp" 
+          src="/election-info/method1.jpeg" 
           alt="各クラスの投票場所"
           width={1200}
           height={900}
@@ -33,7 +33,7 @@ export default function ElectionInfoPage() {
 
         {/* Image 2 */}
         <Image 
-          src="/election-info/method2.webp" 
+          src="/election-info/method2.jpeg" 
           alt="生徒会選挙の仕組み"
           width={1200}
           height={900}
@@ -42,7 +42,7 @@ export default function ElectionInfoPage() {
 
         {/* Image 3 */}
         <Image 
-          src="/election-info/method3.webp" 
+          src="/election-info/method3.jpeg" 
           alt="生徒会選挙当日の動き"
           width={1200}
           height={900}
