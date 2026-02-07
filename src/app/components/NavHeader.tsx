@@ -17,7 +17,7 @@ export function NavHeader() {
                         <nav className="space-x-6">
                             <a href="/election-info" className="text-[#008000] hover:text-green-900 text-[20px]">選挙とは？</a>
                             <a href="/candidates" className="text-[#008000] hover:text-green-900 text-[20px]">候補者一覧</a>
-                            <a href="#" className="text-[#008000] hover:text-green-900 text-[20px]">会則・注意事項</a>
+                            <a href="https://drive.google.com/file/d/1UTIbJA8vp0z4_pXENxEnEYMmFaOkS9Ng/view" className="text-[#008000] hover:text-green-900 text-[20px]">生徒会役員選挙細則</a>
                         </nav>
                     </div>
 

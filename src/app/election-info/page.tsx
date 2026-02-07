@@ -1,13 +1,10 @@
 // src/app/election-info/page.tsx
-import { NavHeader } from "../components/NavHeader";
 import Image from "next/image";
 
 export default function ElectionInfoPage() {
   return (
     <>
-      <NavHeader />
       
-      {/* Header image section - 1/4 left on screen */}
       <div className="pt-28">
         <div className="relative w-1/4 left-0 ml-40">
           <Image 
