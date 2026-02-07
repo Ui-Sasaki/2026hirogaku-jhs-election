@@ -58,7 +58,7 @@ function SectionTitle({ title }: { title: string }) {
         <div className="w-1 h-full bg-green-700" />
         <div className="w-1 h-full bg-green-700 ml-1" />
       </div>
-      <h2 className="ml-5 text-green-700 font-bold text-2xl whitespace-nowrap">
+      <h2 className="ml-5 text-green-700 font-bold text-lg md:text-2xl whitespace-nowrap">
         {formatTitle(title)}
       </h2>
     </div>
@@ -69,7 +69,7 @@ function TrustVoteBadge({ onClick }: { onClick: () => void }) {
   return (
     <button
       onClick={onClick}
-      className="bg-red-600 text-white text-sm font-bold px-5 py-2 rounded-md whitespace-nowrap"
+      className="bg-red-600 text-white text-xs md:text-sm font-bold px-3 py-1.5 md:px-5 md:py-2 rounded-md whitespace-nowrap"
     >
       信任投票
     </button>
@@ -79,8 +79,8 @@ function TrustVoteBadge({ onClick }: { onClick: () => void }) {
 function CandidateCard({ candidate }: { candidate: Candidate }) {
   return (
     <Link href={`/candidates/${candidate.id}`} className="block">
-      <div className="group flex w-[400px] h-[310px] bg-white rounded-md shadow-md overflow-hidden hover:scale-[1.02] transition cursor-pointer">
-        <div className="relative w-[55%] h-full">
+      <div className="group flex w-[360px] sm:w-[380px] md:w-[410px] h-[280px] sm:h-[300px] md:h-[320px] bg-white rounded-md shadow-md overflow-hidden hover:scale-[1.02] transition cursor-pointer">
+        <div className="relative w-[58%] h-full">
           <Image
             src={candidate.image}
             alt={candidate.name}
@@ -90,7 +90,7 @@ function CandidateCard({ candidate }: { candidate: Candidate }) {
         </div>
 
         <div className="w-[45%] h-full bg-green-700 flex flex-col items-center justify-center gap-4">
-          <p className="text-white text-xl font-bold text-center">
+          <p className="text-white text-xl sm:text-2xl md:text-3xl font-bold text-center">
             {candidate.name}
           </p>
 
@@ -136,10 +136,10 @@ export default function Candidates() {
   }, {} as Record<string, Candidate[]>);
 
   return (
-    <div className="-ml-24">
+    <div className="ml-0 md:-ml-24">
       {showModal && <TrustVoteModal onClose={() => setShowModal(false)} />}
 
-      <div className="flex items-center gap-6 mb-20">
+      <div className="flex flex-wrap items-center gap-6 mb-20">
         <PageTitle />
         <button
           onClick={() => setShowModal(true)}
@@ -151,10 +151,10 @@ export default function Candidates() {
 
       {Object.entries(grouped).map(([position, list]) => (
         <section key={position} className="mb-20">
-          <div className="flex items-center gap-6 mb-10">
+          <div className="flex flex-wrap items-center gap-4 md:gap-6 mb-10">
             <SectionTitle title={position} />
 
-            <span className="text-lg font-semibold text-gray-700">
+            <span className="text-sm md:text-lg font-semibold text-gray-700 whitespace-nowrap">
               {positionCounts[position]}
             </span>
 
@@ -163,7 +163,7 @@ export default function Candidates() {
             )}
           </div>
 
-          <div className="grid grid-cols-2 gap-x-16 gap-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 justify-items-center md:justify-items-start">
             {list.map((c) => (
               <CandidateCard key={c.id} candidate={c} />
             ))}

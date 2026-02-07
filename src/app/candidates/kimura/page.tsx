@@ -4,9 +4,8 @@ import Link from "next/link";
 export default function HodaProfile() {
   return (
     <>
-
-      <div className="pt-6 bg-gray-100 min-h-screen flex justify-center">
-        <div className="bg-white w-[1100px] rounded-lg shadow-md p-12">
+      <div className="pt-6 bg-gray-100 min-h-screen flex justify-center px-4">
+        <div className="bg-white w-full max-w-[1100px] rounded-lg shadow-md p-6 md:p-12">
 
           <Link
             href="/#candidates"
@@ -15,27 +14,35 @@ export default function HodaProfile() {
             ← 候補者一覧へ戻る
           </Link>
 
-          <h2 className="text-lg font-bold text-gray-700 mb-2">
+          <h2 className="text-sm md:text-lg font-bold text-gray-700 mb-2">
             新中2書記立候補者
           </h2>
 
-          <h1 className="text-4xl font-extrabold text-green-700 mb-8">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-green-700 mb-8">
             木村　日葵
           </h1>
 
-          <div className="flex gap-12">
+          <div className="flex flex-col md:flex-row gap-10">
 
             <div className="flex-1">
-              <h3 className="text-2xl font-bold mb-4">プロフィール</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4">
+                プロフィール
+              </h3>
               <hr className="mb-6" />
 
-              <p className="mb-2"><strong>所属コース：</strong> 医進サイエンスコース</p>
-              <p className="mb-2"><strong>所属クラス：</strong> M1-5</p>
+              <p className="mb-2 text-sm md:text-base">
+                <strong>所属コース：</strong> 医進サイエンスコース
+              </p>
+              <p className="mb-2 text-sm md:text-base">
+                <strong>所属クラス：</strong> M1-5
+              </p>
 
               <div className="mt-10">
-                <h3 className="text-2xl font-bold mb-4">所信表明</h3>
+                <h3 className="text-xl md:text-2xl font-bold mb-4">
+                  所信表明
+                </h3>
                 <hr className="mb-6" />
-                <p className="leading-relaxed">
+                <p className="leading-relaxed text-sm md:text-base">
                   こんにちは書記候補の中学一年木村日葵です。
                   <br />
                   私が書記に立候補した理由は二点あります。
@@ -49,22 +56,28 @@ export default function HodaProfile() {
               </div>
             </div>
 
-            <div className="w-[320px]">
+            <div className="flex justify-center md:block">
               <Image
                 src="/candidates/kimura.png"
                 alt="木村日葵 ポスター"
-                width={320}
-                height={500}
+                width={280}
+                height={440}
                 className="rounded-md shadow-md"
               />
             </div>
           </div>
 
           <div className="mt-16">
-            <h3 className="text-2xl font-bold mb-4">政見放送</h3>
-              <div class="border rounded-lg w-[800px] mx-auto flex items-center justify-center">
-                <video src="/video/kimura.mp4" controls class="w-full"></video>
-              </div> 
+            <h3 className="text-xl md:text-2xl font-bold mb-4">
+              政見放送
+            </h3>
+            <div className="border rounded-lg w-full max-w-[800px] mx-auto overflow-hidden">
+              <video
+                src="/video/kimura.mp4"
+                controls
+                className="w-full"
+              />
+            </div> 
           </div>
 
         </div>
