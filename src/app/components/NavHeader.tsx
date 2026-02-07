@@ -14,14 +14,14 @@ export function NavHeader() {
 
           <div className="flex items-center">
             <Link href="/">
-              <Image
+            <Image
                 src="/logo.png"
                 alt="Logo"
                 width={180}
                 height={100}
                 className="hidden sm:block"
               />
-              <Image
+            <Image
                 src="/logo.png"
                 alt="Logo"
                 width={130}

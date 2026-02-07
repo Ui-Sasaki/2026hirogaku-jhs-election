@@ -51,12 +51,7 @@ export default function Home() {
 
       <div className="flex items-center justify-center">
         <div className="w-200 mt-10 mb-10">
-          <Image
-            src="/home/Titles/itiran.png"
-            width={150}
-            height={100}
-            alt="Logo"
-          />
+          
 
           <div>
             <Candidates />

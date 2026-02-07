@@ -39,7 +39,7 @@ function formatTitle(position: string) {
 
 function PageTitle() {
   return (
-    <div className="relative inline-flex items-center bg-green-700 px-8 py-4 shadow-md">
+    <div className="relative inline-flex items-center bg-green-700 px-8 py-4 shadow-md mt-2">
       <div className="absolute left-0 top-0 bottom-0 flex items-center pl-2">
         <div className="w-1 h-full bg-white" />
         <div className="w-1 h-full bg-white ml-1" />
@@ -158,7 +158,7 @@ export default function Candidates() {
               {positionCounts[position]}
             </span>
 
-            {(position === "会長" || position === "書記中3") && (
+            {(position === "会長" || position === "書記中3" || position === "会計中3") && (
               <TrustVoteBadge onClick={() => setShowModal(true)} />
             )}
           </div>

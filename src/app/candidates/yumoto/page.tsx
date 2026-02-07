@@ -8,7 +8,7 @@ export default function YumotoProfile() {
         <div className="bg-white w-full max-w-[1100px] rounded-lg shadow-md p-6 md:p-12">
 
           <Link
-            href="/#candidates"
+            href="/candidates"
             className="text-green-700 font-semibold flex items-center mb-6"
           >
             ← 候補者一覧へ戻る
