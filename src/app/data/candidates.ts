@@ -7,7 +7,7 @@ export const candidates = [
   },
   {
     id: "yumoto",
-    name: "湯本篤輝",
+    name: "湯元篤輝",
     position: "副会長",
     image: "/candidates/yumoto.png",
   },

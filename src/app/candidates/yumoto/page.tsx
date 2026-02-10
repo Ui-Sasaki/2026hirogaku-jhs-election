@@ -19,7 +19,7 @@ export default function YumotoProfile() {
           </h2>
 
           <h1 className="text-3xl md:text-4xl font-extrabold text-green-700 mb-8">
-            湯本　篤輝
+            湯元　篤輝
           </h1>
 
           <div className="flex flex-col md:flex-row gap-10">
@@ -53,7 +53,7 @@ export default function YumotoProfile() {
             <div className="flex justify-center md:block">
               <Image
                 src="/candidates/yumoto.png"
-                alt="湯本篤輝 ポスター"
+                alt="湯元篤輝 ポスター"
                 width={280}
                 height={440}
                 className="rounded-md shadow-md"
